@@ -26,3 +26,11 @@ jobs:
     steps:
       - name: LS
         run: ls -al
+
+  other-01:
+    runs-on: ubuntu-latest
+    needs: [other]
+
+    steps:
+      - name: Ls-01
+        run: ls -al
