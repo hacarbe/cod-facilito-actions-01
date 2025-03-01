@@ -1,0 +1,22 @@
+# https://meet.google.com/vxp-jaji-feg: Daily GlobalTask
+name: Hello world
+
+on: [push]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
+
+      - name: Touch file
+        run: touch hello-world.txt
+
+  other:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: LS
+        run: ls -al
