@@ -39,5 +39,7 @@ jobs:
     needs: [other]
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
       - name: Ls-01
         run: ls -al
